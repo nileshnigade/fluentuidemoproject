@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import AccordionComponent from './components/accordionComponent';
 import { TableComponent } from './components/tableComponent';
