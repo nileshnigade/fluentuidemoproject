@@ -1,5 +1,6 @@
 import './App.css';
 import AccordionComponent from './components/accordionComponent';
+import { NavComponent } from './components/navComponent';
 import { TableComponent } from './components/tableComponent';
 import TabsComponent from './components/tabsComponent';
 import { useEffect, useState } from 'react';
@@ -27,13 +28,15 @@ function App() {
   };
   
   return (
-    <div className="App" dir={direction} >
-
+    <div className="App relative pt-20" dir={direction} >
       <button
         onClick={toggleDirection}
-        className="top-4 right-4 bg-blue-500 text-white p-2 rounded">
+        className="absolute z-10 top-4 right-4 bg-blue-500 text-white p-2 rounded">
         Toggle Direction
       </button>
+
+      <NavComponent />
+
 
       Accordion
       <AccordionComponent />
